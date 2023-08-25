@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandBallTournamentv2", "HandBallTournamentv2\HandBallTournamentv2.csproj", "{18E22074-A05A-492A-BB7A-99FBF2D732CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandBallTournamentv2.DataAccess", "HandBallTournamentv2.DataAccess\HandBallTournamentv2.DataAccess.csproj", "{22C6BC3E-66B1-446F-959D-C2B2872D528E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18E22074-A05A-492A-BB7A-99FBF2D732CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18E22074-A05A-492A-BB7A-99FBF2D732CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18E22074-A05A-492A-BB7A-99FBF2D732CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18E22074-A05A-492A-BB7A-99FBF2D732CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22C6BC3E-66B1-446F-959D-C2B2872D528E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22C6BC3E-66B1-446F-959D-C2B2872D528E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22C6BC3E-66B1-446F-959D-C2B2872D528E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22C6BC3E-66B1-446F-959D-C2B2872D528E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DC1DC8A-1DEC-4CE1-9D4F-3CAECCB8CB12}
+	EndGlobalSection
+EndGlobal
