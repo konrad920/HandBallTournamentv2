@@ -24,7 +24,7 @@ namespace HandBallTournamentv2.ApplicationServices.API.Handlers
                 ClubId = request.Id
             };
             var club = await this.queryExecutor.Execute(query);
-            var clubFromDb = this.mapper.Map<Club>(club);
+            var clubFromDb = this.mapper.Map<DTO_Club>(club);
             var response = new GetClubByIdResponse()
             {
                 Data = clubFromDb

@@ -2,7 +2,7 @@
 
 namespace HandBallTournamentv2.ApplicationServices.API.Domain.Models
 {
-    public class AddClubResponse : ResponseBase<Club>
+    public class AddClubResponse : ResponseBase<DTO_Club>
     {
     }
 }

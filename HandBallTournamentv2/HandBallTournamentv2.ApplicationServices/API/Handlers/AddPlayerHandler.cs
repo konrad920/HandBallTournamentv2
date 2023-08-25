@@ -26,7 +26,7 @@ namespace HandBallTournamentv2.ApplicationServices.API.Handlers
             var playerFromDb = await commandExecutor.Execute(command);
             return new AddPlayerResponse()
             {
-                Data = this.mapper.Map<Player>(playerFromDb)
+                Data = this.mapper.Map<DTO_Player>(playerFromDb)
             };
         }
     }

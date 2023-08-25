@@ -28,7 +28,7 @@ namespace HandBallTournamentv2.ApplicationServices.API.Handlers
             var editedClub = await this.commandExecutor.Execute(command);
             var response = new PutClubResponse
             {
-                Data = this.mapper.Map<Club>(editedClub)
+                Data = this.mapper.Map<DTO_Club>(editedClub)
             };
             return response;
         }

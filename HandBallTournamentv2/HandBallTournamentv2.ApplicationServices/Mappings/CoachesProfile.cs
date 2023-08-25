@@ -7,7 +7,7 @@ namespace HandBallTournamentv2.ApplicationServices.Mappings
     {
         public CoachesProfile()
         {
-            this.CreateMap<DataAccess.Entities.Coach, Coach>()
+            this.CreateMap<DataAccess.Entities.Coach, DTO_Coach>()
                 .ForMember(x => x.Id, y => y.MapFrom(z => z.Id))
                 .ForMember(x => x.Name, y => y.MapFrom(z => z.Name));
         }

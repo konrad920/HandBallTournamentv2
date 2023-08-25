@@ -25,7 +25,7 @@ namespace HandBallTournamentv2.ApplicationServices.API.Handlers
 
             return new AddCoachResponse()
             {
-                Data = this.mapper.Map<Coach>(choachFromDb)
+                Data = this.mapper.Map<DTO_Coach>(choachFromDb)
             };
         }
     }

@@ -24,7 +24,7 @@ namespace HandBallTournamentv2.ApplicationServices.API.Handlers
                 PlayerId = request.Id
             };
             var player = await this.queryExecutor.Execute(query);
-            var playerFromDb = this.mapper.Map<Player>(player);
+            var playerFromDb = this.mapper.Map<DTO_Player>(player);
             var response = new GetPlayerByIdResponse()
             {
                 Data = playerFromDb

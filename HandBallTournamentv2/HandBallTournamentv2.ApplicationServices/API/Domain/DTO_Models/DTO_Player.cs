@@ -1,7 +1,7 @@
 ﻿
 namespace HandBallTournamentv2.ApplicationServices.API.Domain.Models
 {
-    public class Player
+    public class DTO_Player
     {
         public int Id { get; set; }
 

@@ -15,7 +15,7 @@ namespace HandBallTournamentv2.ApplicationServices.Mappings
                 .ForMember(x => x.YearOfBirth, y => y.MapFrom(z => z.PlayerYearOfBirth))
                 .ForMember(x => x.ClubId, y => y.MapFrom(z => z.PlayerClubId));
 
-            this.CreateMap<DataAccess.Entities.Player, Player>()
+            this.CreateMap<DataAccess.Entities.Player, DTO_Player>()
                 .ForMember(x => x.Id, y => y.MapFrom(z => z.Id))
                 .ForMember(x => x.Name, y => y.MapFrom(z => z.Name))
                 .ForMember(x => x.Position, y => y.MapFrom(z => z.Position));

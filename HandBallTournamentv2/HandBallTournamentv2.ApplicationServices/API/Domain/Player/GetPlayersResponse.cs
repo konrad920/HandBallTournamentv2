@@ -2,7 +2,7 @@
 
 namespace HandBallTournamentv2.ApplicationServices.API.Domain.Models
 {
-    public class GetPlayersResponse : ResponseBase<List<Player>>
+    public class GetPlayersResponse : ResponseBase<List<DTO_Player>>
     {
     }
 }

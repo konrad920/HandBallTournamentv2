@@ -24,7 +24,7 @@ namespace HandBallTournamentv2.ApplicationServices.API.Handlers
                 CoachId = request.Id 
             };
             var coach = await this.queryExecutor.Execute(query);
-            var coachFromDb = this.mapper.Map<Coach>(coach);
+            var coachFromDb = this.mapper.Map<DTO_Coach>(coach);
             var response = new GetCoachByIdResponse()
             {
                 Data = coachFromDb

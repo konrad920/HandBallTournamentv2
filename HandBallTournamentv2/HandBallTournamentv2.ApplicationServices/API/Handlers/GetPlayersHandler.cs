@@ -26,7 +26,7 @@ namespace HandBallTournamentv2.ApplicationServices.API.Handlers
                 PlayerPosition = request.PlayerPosition
             };
             var players = await queryExecutor.Execute(query);
-            var mappedPlayers = this.mapper.Map<List<Domain.Models.Player>>(players);
+            var mappedPlayers = this.mapper.Map<List<Domain.Models.DTO_Player>>(players);
 
             var response = new GetPlayersResponse()
             {
