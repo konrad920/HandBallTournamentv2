@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandBallTournamentv2", "Han
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandBallTournamentv2.DataAccess", "HandBallTournamentv2.DataAccess\HandBallTournamentv2.DataAccess.csproj", "{22C6BC3E-66B1-446F-959D-C2B2872D528E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandBallTournamentv2.ApplicationServices", "HandBallTournamentv2.ApplicationServices\HandBallTournamentv2.ApplicationServices.csproj", "{328CDCD1-B6AE-43F9-95EB-B5B95B663A0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandBallTournamentv2.ApplicationServices", "HandBallTournamentv2.ApplicationServices\HandBallTournamentv2.ApplicationServices.csproj", "{328CDCD1-B6AE-43F9-95EB-B5B95B663A0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
