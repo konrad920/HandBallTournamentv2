@@ -57,5 +57,13 @@ namespace HandBallTournamentv2.Controllers
             var response = await this.mediator.Send(request);
             return this.Ok(response);
         }
+
+        [HttpPut]
+        [Route("matchId")]
+        public async Task<IActionResult> EditMatch([FromBody] PutMatchRequest request)
+        {
+            var response = await this.mediator.Send(request);
+            return this.Ok(response);
+        }
     }
 }

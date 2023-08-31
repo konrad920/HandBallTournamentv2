@@ -7,7 +7,7 @@ namespace HandBallTournamentv2.DataAccess.CQRS.Commands.ADD
     {
         public override async Task<Player> Execute(TournamentEntitiesContext context)
         {
-            await context.AddAsync(Parameter);
+            await context.Players.AddAsync(Parameter);
             await context.SaveChangesAsync();
             return Parameter;
         }

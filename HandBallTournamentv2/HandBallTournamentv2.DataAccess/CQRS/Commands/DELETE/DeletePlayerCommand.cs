@@ -7,7 +7,7 @@ namespace HandBallTournamentv2.DataAccess.CQRS.Commands.DELETE
     {
         public override async Task<Player> Execute(TournamentEntitiesContext context)
         {
-            context.Remove(Parameter);
+            context.Players.Remove(Parameter);
             await context.SaveChangesAsync();
             return Parameter;
         }
