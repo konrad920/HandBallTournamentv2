@@ -46,5 +46,17 @@ namespace HandBallTournamentv2.Controllers
             return this.Ok(response);
         }
 
+        [HttpDelete]
+        [Route("coachId")]
+        public async Task<IActionResult> DeleteCoachById([FromQuery] int coachId)
+        {
+            var request = new DeleteCoachByIdRequest() 
+            { 
+                Id = coachId 
+            };
+            var response = await this.mediator.Send(request);
+            return this.Ok(response);
+        }
+
     }
 }

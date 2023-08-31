@@ -41,9 +41,21 @@ namespace HandBallTournamentv2.Controllers
         }
 
         [HttpPost]
-        [Route("clubId")]
+        [Route("")]
         public async Task<IActionResult> AddPlayer([FromBody] AddPlayerRequest request)
         {
+            var response = await this.mediator.Send(request);
+            return this.Ok(response);
+        }
+
+        [HttpDelete]
+        [Route("playerId")]
+        public async Task<IActionResult> DeletePlayerById([FromQuery] int playerId)
+        {
+            var request = new DeletePlayerByIdRequest()
+            {
+                Id=playerId
+            };
             var response = await this.mediator.Send(request);
             return this.Ok(response);
         }

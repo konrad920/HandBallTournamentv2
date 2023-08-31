@@ -1,6 +1,7 @@
 ﻿using HandBallTournamentv2.ApplicationServices.API.Domain;
 using HandBallTournamentv2.ApplicationServices.API.Domain.Match;
 using HandBallTournamentv2.ApplicationServices.API.Domain.Models;
+using HandBallTournamentv2.ApplicationServices.API.Domain.Player;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -41,6 +42,18 @@ namespace HandBallTournamentv2.Controllers
         [Route("")]
         public async Task<IActionResult> AddMatch([FromBody] AddMatchRequest request)
         {
+            var response = await this.mediator.Send(request);
+            return this.Ok(response);
+        }
+
+        [HttpDelete]
+        [Route("matchId")]
+        public async Task<IActionResult> DeleteMatchById([FromQuery] int matchId)
+        {
+            var request = new DeleteMatchByIdRequest()
+            {
+                Id = matchId
+            };
             var response = await this.mediator.Send(request);
             return this.Ok(response);
         }
