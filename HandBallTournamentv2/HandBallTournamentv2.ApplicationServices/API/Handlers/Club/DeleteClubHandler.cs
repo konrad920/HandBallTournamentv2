@@ -28,7 +28,7 @@ namespace HandBallTournamentv2.ApplicationServices.API.Handlers.Club
             var deletedClub = await commandExecutor.Execute(command);
             var response = new DeleteClubByIdResponse
             {
-                Data = mapper.Map<DTO_Club>(deletedClub)
+                Data = mapper.Map<ClubDto>(deletedClub)
             };
             return response;
         }

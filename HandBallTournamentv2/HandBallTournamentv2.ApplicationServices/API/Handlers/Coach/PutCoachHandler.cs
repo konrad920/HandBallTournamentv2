@@ -29,7 +29,7 @@ namespace HandBallTournamentv2.ApplicationServices.API.Handlers.Coach
             var editedCoach = await commandExecutor.Execute(command);
             var response = new PutCoachResponse()
             {
-                Data = mapper.Map<DTO_Coach>(editedCoach),
+                Data = mapper.Map<CoachDto>(editedCoach),
             };
             return response;
         }

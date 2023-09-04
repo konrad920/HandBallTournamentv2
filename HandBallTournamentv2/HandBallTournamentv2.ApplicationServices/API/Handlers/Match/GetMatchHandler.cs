@@ -24,7 +24,7 @@ namespace HandBallTournamentv2.ApplicationServices.API.Handlers.Match
                 MatchId = request.Id
             };
             var match = await queryExecutor.Execute(query);
-            var matchFromDb = mapper.Map<DTO_Match>(match);
+            var matchFromDb = mapper.Map<MatchDto>(match);
             var response = new GetMatchByIdResponse()
             {
                 Data = matchFromDb

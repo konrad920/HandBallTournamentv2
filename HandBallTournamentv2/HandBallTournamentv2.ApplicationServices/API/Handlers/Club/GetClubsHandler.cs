@@ -22,7 +22,7 @@ namespace HandBallTournamentv2.ApplicationServices.API.Handlers.Club
         {
             var query = new GetClubsQuery();
             var clubs = await queryExecutor.Execute(query);
-            var mappedClubs = mapper.Map<List<DTO_Club>>(clubs);
+            var mappedClubs = mapper.Map<List<ClubDto>>(clubs);
             var response = new GetClubsResponse()
             {
                 Data = mappedClubs

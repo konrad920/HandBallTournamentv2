@@ -13,7 +13,7 @@ namespace HandBallTournamentv2.ApplicationServices.Mappings
                 .ForMember(x => x.Salary, y => y.MapFrom(z => z.CoachSalary))
                 .ForMember(x => x.ClubId, y => y.MapFrom(z => z.ClubCoachId));
 
-            this.CreateMap<DataAccess.Entities.Coach, DTO_Coach>()
+            this.CreateMap<DataAccess.Entities.Coach, CoachDto>()
                 .ForMember(x => x.Name, y => y.MapFrom(z => z.Name))
                 .ForMember(x => x.Id, y => y.MapFrom(z => z.Id));
         }

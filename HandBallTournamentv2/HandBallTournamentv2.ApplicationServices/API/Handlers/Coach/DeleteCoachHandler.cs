@@ -29,7 +29,7 @@ namespace HandBallTournamentv2.ApplicationServices.API.Handlers.Coach
             var deletedCoach = await commandExecutor.Execute(command);
             var response = new DeleteCoachByIdResponse
             {
-                Data = mapper.Map<DTO_Coach>(deletedCoach)
+                Data = mapper.Map<CoachDto>(deletedCoach)
             };
             return response;
         }

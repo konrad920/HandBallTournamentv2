@@ -18,7 +18,7 @@ namespace HandBallTournamentv2.ApplicationServices.Mappings
                 .ForMember(x => x.HostScore, y => y.MapFrom(z => z.MatchHostScore))
                 .ForMember(x => x.QuestScore, y => y.MapFrom(z => z.MatchQuestScore));
 
-            this.CreateMap<DataAccess.Entities.Match, DTO_Match>()
+            this.CreateMap<DataAccess.Entities.Match, MatchDto>()
                 .ForMember(x => x.Id, y => y.MapFrom(z => z.Id))
                 .ForMember(x => x.HostClubId, y => y.MapFrom(z => z.HostClubId))
                 .ForMember(x => x.QuestClubId, y => y.MapFrom(z => z.QuestClubId))

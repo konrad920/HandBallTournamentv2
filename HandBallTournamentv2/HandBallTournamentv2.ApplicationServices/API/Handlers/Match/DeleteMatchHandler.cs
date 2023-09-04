@@ -28,7 +28,7 @@ namespace HandBallTournamentv2.ApplicationServices.API.Handlers.Match
             var deletedMatch = await commandExecutor.Execute(command);
             var response = new DeleteMatchByIdResponse()
             {
-                Data = mapper.Map<DTO_Match>(deletedMatch)
+                Data = mapper.Map<MatchDto>(deletedMatch)
             };
             return response;
         }

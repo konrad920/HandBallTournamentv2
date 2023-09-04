@@ -22,7 +22,7 @@ namespace HandBallTournamentv2.ApplicationServices.API.Handlers.Coach
         {
             var query = new GetCoachesQuery();
             var coaches = await queryExecutor.Execute(query);
-            var mappedCoaches = mapper.Map<List<DTO_Coach>>(coaches);
+            var mappedCoaches = mapper.Map<List<CoachDto>>(coaches);
 
             var response = new GetCoachesResponse()
             {

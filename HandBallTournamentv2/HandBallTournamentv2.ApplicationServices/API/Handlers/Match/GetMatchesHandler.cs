@@ -27,7 +27,7 @@ namespace HandBallTournamentv2.ApplicationServices.API.Handlers.Match
                 MatchTicketCost = request.MaxMatchTicketCost
             };
             var matches = await queryExecutor.Execute(query);
-            var mappedMatches = mapper.Map<List<DTO_Match>>(matches);
+            var mappedMatches = mapper.Map<List<MatchDto>>(matches);
 
             var response = new GetMatchesResponse()
             {

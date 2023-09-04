@@ -24,7 +24,7 @@ namespace HandBallTournamentv2.ApplicationServices.API.Handlers.Club
             var clubFromDb = await commandExecutor.Execute(command);
             return new AddClubResponse()
             {
-                Data = mapper.Map<DTO_Club>(clubFromDb)
+                Data = mapper.Map<ClubDto>(clubFromDb)
             };
 
         }

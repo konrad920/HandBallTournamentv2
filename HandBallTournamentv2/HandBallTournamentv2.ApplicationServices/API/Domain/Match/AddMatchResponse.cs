@@ -2,7 +2,7 @@
 
 namespace HandBallTournamentv2.ApplicationServices.API.Domain.Match
 {
-    public class AddMatchResponse : ResponseBase<DTO_Match>
+    public class AddMatchResponse : ResponseBase<MatchDto>
     {
     }
 }

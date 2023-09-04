@@ -39,7 +39,7 @@ namespace HandBallTournamentv2.ApplicationServices.API.Handlers.Match
             var editedMatch = await commandExecutor.Execute(command);
             var response = new PutMatchResponse()
             {
-                Data = mapper.Map<DTO_Match>(editedMatch)
+                Data = mapper.Map<MatchDto>(editedMatch)
             };
             return response;
         }

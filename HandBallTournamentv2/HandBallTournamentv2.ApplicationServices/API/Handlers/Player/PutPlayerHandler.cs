@@ -37,7 +37,7 @@ namespace HandBallTournamentv2.ApplicationServices.API.Handlers.Player
             var editedPlayer = await commandExecutor.Execute(command);
             var response = new PutPlayerResponse()
             {
-                Data = mapper.Map<DTO_Player>(editedPlayer)
+                Data = mapper.Map<PlayerDto>(editedPlayer)
             };
             return response;
         }

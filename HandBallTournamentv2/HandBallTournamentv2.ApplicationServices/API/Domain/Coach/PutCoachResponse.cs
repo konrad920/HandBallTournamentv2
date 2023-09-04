@@ -2,7 +2,7 @@
 
 namespace HandBallTournamentv2.ApplicationServices.API.Domain.Coach
 {
-    public class PutCoachResponse : ResponseBase<DTO_Coach>
+    public class PutCoachResponse : ResponseBase<CoachDto>
     {
     }
 }
