@@ -5,7 +5,7 @@ namespace HandBallTournamentv2.ApplicationServices.API.Domain.Models
 {
     public class AddPlayerRequest : IRequest<AddPlayerResponse>
     {
-        public int PlayerId { get; set; }
+        //public int PlayerId { get; set; }
         public string PlayerName { get; set; }
 
         public string PlayerSurname { get; set; }

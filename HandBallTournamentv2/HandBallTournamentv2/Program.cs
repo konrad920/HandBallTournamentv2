@@ -3,6 +3,8 @@ using HandBallTournamentv2.ApplicationServices.API.Domain;
 using HandBallTournamentv2.DataAccess;
 using HandBallTournamentv2.DataAccess.CQRS;
 using Microsoft.EntityFrameworkCore;
+using FluentValidation.AspNetCore;
+using HandBallTournamentv2.ApplicationServices.API.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddMvcCore().AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<AddClubRequestValidator>());
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
