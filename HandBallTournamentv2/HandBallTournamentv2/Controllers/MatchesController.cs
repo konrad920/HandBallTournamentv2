@@ -42,6 +42,10 @@ namespace HandBallTournamentv2.Controllers
         [Route("")]
         public async Task<IActionResult> AddMatch([FromBody] AddMatchRequest request)
         {
+            //if (!this.ModelState.IsValid)
+            //{
+            //    return this.BadRequest("BADREQUEST Match");
+            //}
             var response = await this.mediator.Send(request);
             return this.Ok(response);
         }

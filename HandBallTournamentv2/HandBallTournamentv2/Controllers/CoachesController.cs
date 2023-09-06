@@ -42,6 +42,10 @@ namespace HandBallTournamentv2.Controllers
         [Route("")]
         public async Task<IActionResult> AddCoach([FromBody] AddCoachRequest request)
         {
+            //if (!this.ModelState.IsValid)
+            //{
+            //    return this.BadRequest("BADREQUEST Coach");
+            //}
             var response = await this.mediator.Send(request);
             return this.Ok(response);
         }

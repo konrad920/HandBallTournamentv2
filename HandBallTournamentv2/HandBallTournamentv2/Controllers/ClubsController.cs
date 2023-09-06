@@ -42,6 +42,10 @@ namespace HandBallTournamentv2.Controllers
         [Route("")]
         public async Task<IActionResult> AddClub([FromBody] AddClubRequest request)
         {
+            //if (!this.ModelState.IsValid)
+            //{
+            //    return this.BadRequest("BADREQUEST Club");
+            //}
             var response = await this.mediator.Send(request);
             return this.Ok(response);
         }
