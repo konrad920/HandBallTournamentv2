@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HandBallTournamentv2.DataAccess.Migrations
 {
     [DbContext(typeof(TournamentEntitiesContext))]
-    [Migration("20230825083335_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20231003160511_SumOfSalary_set")]
+    partial class SumOfSalary_set
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

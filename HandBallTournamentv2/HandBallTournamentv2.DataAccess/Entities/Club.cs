@@ -15,5 +15,11 @@ namespace HandBallTournamentv2.DataAccess.Entities
         public string NameOfClub { get; set; }
 
         public string NameOfStadium { get; set; }
+
+        public float SumOfSalary {
+            set {
+                var playerSalary = Players.Select(x => x.Salary).Sum();
+            } 
+        }
     }
 }

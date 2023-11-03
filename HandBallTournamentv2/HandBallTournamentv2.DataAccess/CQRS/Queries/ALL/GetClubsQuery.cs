@@ -7,7 +7,8 @@ namespace HandBallTournamentv2.DataAccess.CQRS.Queries.ALL
     {
         public override Task<List<Club>> Execute(TournamentEntitiesContext context)
         {
-            return context.Clubs.ToListAsync();
+            return context.Clubs.Include(x => x.Players)
+                .ToListAsync();
         }
     }
 }

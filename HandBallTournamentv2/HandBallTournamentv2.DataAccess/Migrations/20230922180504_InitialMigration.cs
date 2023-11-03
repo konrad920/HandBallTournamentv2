@@ -77,7 +77,8 @@ namespace HandBallTournamentv2.DataAccess.Migrations
                     Surname = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     Position = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
                     YearOfBirth = table.Column<int>(type: "int", nullable: false),
-                    Salary = table.Column<float>(type: "real", nullable: false)
+                    Salary = table.Column<float>(type: "real", nullable: false),
+                    Sale = table.Column<float>(type: "real", nullable: false)
                 },
                 constraints: table =>
                 {
